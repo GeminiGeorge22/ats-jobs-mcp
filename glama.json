@@ -1,0 +1,9 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": [
+    "GeminiGeorge22"
+  ],
+  "name": "ATS Jobs MCP: Ashby, Greenhouse, Lever & SmartRecruiters",
+  "description": "New job postings since any date from Ashby, Greenhouse, Lever and SmartRecruiters boards. Hosted remote MCP via Apify; manifest-only repo.",
+  "category": "Jobs & Recruiting"
+}

@@ -1,0 +1,72 @@
+# ATS Jobs MCP: Ashby, Greenhouse, Lever & SmartRecruiters
+
+**New job postings since any date** from the four big applicant tracking systems (Ashby, Greenhouse, Lever, SmartRecruiters), as MCP tools for Claude, Cursor or any MCP client. Give it company board names and a window (24h, 7d, 30d, or a date) and get back only the postings that are new.
+
+Hosted remote MCP server (Streamable HTTP) on [Apify's MCP gateway](https://mcp.apify.com). **Manifest-only repo: no Actor source.**
+
+**Disclosure:** I maintain these Actors on Apify Store (publisher `publicrecords`).
+
+## MCP endpoint
+
+```
+https://mcp.apify.com/?tools=publicrecords/ashby-jobs-scraper,publicrecords/greenhouse-jobs-scraper,publicrecords/lever-jobs-scraper,publicrecords/smartrecruiters-jobs-scraper
+```
+
+Auth: sign in with Apify (OAuth) when your client prompts, or send an Apify API token as a Bearer token. Runs are billed per result on your own Apify account; see each Store page for current pricing.
+
+## Tools
+
+| Actor | Store page | MCP tool | What it returns |
+|---|---|---|---|
+| **Ashby Jobs Scraper** | [publicrecords/ashby-jobs-scraper](https://apify.com/publicrecords/ashby-jobs-scraper) | `publicrecords--ashby-jobs-scraper` | Open jobs from any Ashby job board, only those published since a date or window (24h, 7d, 30d): title, location, department, compensation, URL, description. |
+| **Greenhouse Jobs Scraper** | [publicrecords/greenhouse-jobs-scraper](https://apify.com/publicrecords/greenhouse-jobs-scraper) | `publicrecords--greenhouse-jobs-scraper` | Open jobs from any Greenhouse job board published since a date or window: title, location, department, URL, description. |
+| **Lever Jobs Scraper** | [publicrecords/lever-jobs-scraper](https://apify.com/publicrecords/lever-jobs-scraper) | `publicrecords--lever-jobs-scraper` | Open jobs from any Lever job board created since a date or window: title, location, team, workplace type, URL, description. |
+| **SmartRecruiters Jobs Scraper** | [publicrecords/smartrecruiters-jobs-scraper](https://apify.com/publicrecords/smartrecruiters-jobs-scraper) | `publicrecords--smartrecruiters-jobs-scraper` | Open jobs from any SmartRecruiters careers site released since a date or window: title, location, department, URL, description. |
+
+The Apify gateway also exposes helper tools to read run results (`get-actor-run`, `get-dataset-items`).
+
+## Who it's for
+
+- Job seekers and agents: watch target companies for roles posted in the last day or week.
+- Recruiters and sourcers: see which companies just opened roles in a function or location.
+- Sales and market research: hiring signals (new teams, new locations) from public job boards.
+
+## Example prompts
+
+- List Greenhouse jobs posted in the last 7 days at `<board name>` with 'engineer' in the title.
+- Which roles did `<ashby board>` and `<lever board>` open in the last 24 hours? Group by department.
+- Pull SmartRecruiters postings released since `<date>` for `<company>` and give me the remote ones.
+
+## Cursor / Claude Code / any remote-MCP client
+
+```json
+{
+  "mcpServers": {
+    "ats-jobs": {
+      "url": "https://mcp.apify.com/?tools=publicrecords/ashby-jobs-scraper,publicrecords/greenhouse-jobs-scraper,publicrecords/lever-jobs-scraper,publicrecords/smartrecruiters-jobs-scraper"
+    }
+  }
+}
+```
+
+## Claude Desktop (local bridge)
+
+```json
+{
+  "mcpServers": {
+    "ats-jobs": {
+      "command": "npx",
+      "args": ["-y", "@apify/actors-mcp-server", "--actors", "publicrecords/ashby-jobs-scraper,publicrecords/greenhouse-jobs-scraper,publicrecords/lever-jobs-scraper,publicrecords/smartrecruiters-jobs-scraper"],
+      "env": { "APIFY_TOKEN": "YOUR_APIFY_TOKEN" }
+    }
+  }
+}
+```
+
+## Registry
+
+Official MCP Registry name: `io.github.GeminiGeorge22/ats-jobs-mcp`
+
+## License
+
+MIT, for this documentation and config only. Not affiliated with the sites the Actors read.

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.GeminiGeorge22/ats-jobs-mcp",
+  "title": "ATS Jobs MCP: Ashby, Greenhouse, Lever & SmartRecruiters",
+  "description": "New job postings since any date from Ashby, Greenhouse, Lever and SmartRecruiters boards.",
+  "repository": {
+    "url": "https://github.com/GeminiGeorge22/ats-jobs-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "websiteUrl": "https://github.com/GeminiGeorge22/ats-jobs-mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=publicrecords/ashby-jobs-scraper,publicrecords/greenhouse-jobs-scraper,publicrecords/lever-jobs-scraper,publicrecords/smartrecruiters-jobs-scraper"
+    }
+  ]
+}
