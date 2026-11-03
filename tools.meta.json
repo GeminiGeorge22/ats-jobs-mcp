@@ -1,0 +1,6 @@
+{
+  "publicrecords/ashby-jobs-scraper": "Use when you need open jobs from companies that hire on Ashby, optionally only those posted since a date or window (24h, 7d, 30d).",
+  "publicrecords/greenhouse-jobs-scraper": "Use when you need open jobs from companies that hire on Greenhouse, optionally only those posted since a date or window (24h, 7d, 30d).",
+  "publicrecords/lever-jobs-scraper": "Use when you need open jobs from companies that hire on Lever, optionally only those created since a date or window (24h, 7d, 30d).",
+  "publicrecords/smartrecruiters-jobs-scraper": "Use when you need open jobs from companies that hire on SmartRecruiters, optionally only those released since a date or window (24h, 7d, 30d)."
+}
