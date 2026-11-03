@@ -1,5 +1,7 @@
 # ats-jobs-mcp-server (Python)
 
+<!-- mcp-name: io.github.GeminiGeorge22/ats-jobs-mcp -->
+
 Python version of the [ats-jobs-mcp](https://github.com/GeminiGeorge22/ats-jobs-mcp) stdio MCP server, built on the official [`mcp`](https://pypi.org/project/mcp/) Python SDK. Same tools, same `APIFY_TOKEN` env var, same hosted endpoint as the Node.js server.
 
 Stdio MCP server for new job postings from Ashby, Greenhouse, Lever and SmartRecruiters via Apify's hosted MCP gateway
@@ -11,15 +13,17 @@ It answers `initialize` and `tools/list` locally from the bundled `tools.json` (
 Requires Python 3.10+. With [uv](https://docs.astral.sh/uv/):
 
 ```bash
-uvx --from "git+https://github.com/GeminiGeorge22/ats-jobs-mcp#subdirectory=python" ats-jobs-mcp-server
+uvx ats-jobs-mcp-server
 ```
 
 With pip:
 
 ```bash
-pip install "git+https://github.com/GeminiGeorge22/ats-jobs-mcp#subdirectory=python"
+pip install ats-jobs-mcp-server
 ats-jobs-mcp-server
 ```
+
+To run the latest unreleased code from GitHub instead of the PyPI release: `uvx --from "git+https://github.com/GeminiGeorge22/ats-jobs-mcp#subdirectory=python" ats-jobs-mcp-server`.
 
 MCP client config:
 
@@ -28,7 +32,7 @@ MCP client config:
   "mcpServers": {
     "ats-jobs": {
       "command": "uvx",
-      "args": ["--from", "git+https://github.com/GeminiGeorge22/ats-jobs-mcp#subdirectory=python", "ats-jobs-mcp-server"],
+      "args": ["ats-jobs-mcp-server"],
       "env": { "APIFY_TOKEN": "YOUR_APIFY_TOKEN" }
     }
   }
