@@ -4,6 +4,6 @@
     "GeminiGeorge22"
   ],
   "name": "ATS Jobs MCP: Ashby, Greenhouse, Lever & SmartRecruiters",
-  "description": "New job postings since any date from Ashby, Greenhouse, Lever and SmartRecruiters boards. Hosted remote MCP via Apify; manifest-only repo.",
+  "description": "New job postings since any date from Ashby, Greenhouse, Lever and SmartRecruiters boards. Hosted remote MCP on Apify's gateway, plus an open-source Node.js stdio proxy in this repo.",
   "category": "Jobs & Recruiting"
 }
