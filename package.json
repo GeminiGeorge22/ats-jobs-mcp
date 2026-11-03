@@ -1,6 +1,6 @@
 {
   "name": "ats-jobs-mcp",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Stdio MCP server for new job postings from Ashby, Greenhouse, Lever and SmartRecruiters via Apify's hosted MCP gateway",
   "type": "module",
   "license": "MIT",
