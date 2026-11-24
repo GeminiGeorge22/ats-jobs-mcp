@@ -1,5 +1,7 @@
 # ATS Jobs MCP: Ashby, Greenhouse, Lever & SmartRecruiters
 
+[![GeminiGeorge22/ats-jobs-mcp MCP server](https://glama.ai/mcp/servers/GeminiGeorge22/ats-jobs-mcp/badges/score.svg)](https://glama.ai/mcp/servers/GeminiGeorge22/ats-jobs-mcp)
+
 **New job postings since any date** from the four big applicant tracking systems (Ashby, Greenhouse, Lever, SmartRecruiters), as MCP tools for Claude, Cursor or any MCP client. Give it company board names and a window (24h, 7d, 30d, or a date) and get back only the postings that are new.
 
 Hosted remote MCP server (Streamable HTTP) on [Apify's MCP gateway](https://mcp.apify.com). **Client config plus a small open-source stdio proxy server. No Actor source.**
