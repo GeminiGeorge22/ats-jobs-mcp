@@ -9,8 +9,8 @@
   "tools": [
     {
       "name": "publicrecords--ashby-jobs-scraper",
-      "title": "Ashby Jobs Scraper — New Postings Since Any Date",
-      "description": "Ashby Jobs Scraper — New Postings Since Any Date. Scrape open jobs from any Ashby job board and return only postings published since a date or window (24h, 7d, 30d). Title, location, department, compensation, URL, description.\n\nWhen to use: Use when you need open jobs from companies that hire on Ashby, optionally only those posted since a date or window (24h, 7d, 30d).\n\nReturns: the run's dataset rows as structured JSON (one row per result), plus the run and dataset IDs for paging the full dataset.\n\nBehavior: starts one run of the Apify Actor \"publicrecords/ashby-jobs-scraper\" through Apify's hosted MCP gateway (mcp.apify.com) with your own APIFY_TOKEN; the run uses your Apify account. Read-only: it only reads public web data and changes nothing on the source site. Docs: https://apify.com/publicrecords/ashby-jobs-scraper",
+      "title": "Ashby Jobs Scraper — New Job Postings Since Any Date",
+      "description": "Ashby Jobs Scraper — New Job Postings Since Any Date. Scrape Ashby jobs and job postings from any Ashby job board, only those published since a date or window (24h, 7d, 30d). Title, location, department, compensation, URL, description.\n\nWhen to use: Use when you need open jobs from companies that hire on Ashby, optionally only those posted since a date or window (24h, 7d, 30d).\n\nReturns: the run's dataset rows as structured JSON (one row per result), plus the run and dataset IDs for paging the full dataset.\n\nBehavior: starts one run of the Apify Actor \"publicrecords/ashby-jobs-scraper\" through Apify's hosted MCP gateway (mcp.apify.com) with your own APIFY_TOKEN; the run uses your Apify account. Read-only: it only reads public web data and changes nothing on the source site. Docs: https://apify.com/publicrecords/ashby-jobs-scraper",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -47,7 +47,7 @@
         ]
       },
       "annotations": {
-        "title": "Ashby Jobs Scraper — New Postings Since Any Date",
+        "title": "Ashby Jobs Scraper — New Job Postings Since Any Date",
         "readOnlyHint": true,
         "destructiveHint": false,
         "idempotentHint": false,
@@ -56,8 +56,8 @@
     },
     {
       "name": "publicrecords--greenhouse-jobs-scraper",
-      "title": "Greenhouse Jobs Scraper — New Postings Since Any Date",
-      "description": "Greenhouse Jobs Scraper — New Postings Since Any Date. Scrape open jobs from any Greenhouse job board and return only postings published since a date or window (24h, 7d, 30d). Title, location, department, URL, description.\n\nWhen to use: Use when you need open jobs from companies that hire on Greenhouse, optionally only those posted since a date or window (24h, 7d, 30d).\n\nReturns: the run's dataset rows as structured JSON (one row per result), plus the run and dataset IDs for paging the full dataset.\n\nBehavior: starts one run of the Apify Actor \"publicrecords/greenhouse-jobs-scraper\" through Apify's hosted MCP gateway (mcp.apify.com) with your own APIFY_TOKEN; the run uses your Apify account. Read-only: it only reads public web data and changes nothing on the source site. Docs: https://apify.com/publicrecords/greenhouse-jobs-scraper",
+      "title": "Greenhouse Jobs Scraper — New Job Postings Since Any Date",
+      "description": "Greenhouse Jobs Scraper — New Job Postings Since Any Date. Scrape Greenhouse jobs and job postings from any Greenhouse job board, only those published since a date or window (24h, 7d, 30d). Title, location, department, URL, description.\n\nWhen to use: Use when you need open jobs from companies that hire on Greenhouse, optionally only those posted since a date or window (24h, 7d, 30d).\n\nReturns: the run's dataset rows as structured JSON (one row per result), plus the run and dataset IDs for paging the full dataset.\n\nBehavior: starts one run of the Apify Actor \"publicrecords/greenhouse-jobs-scraper\" through Apify's hosted MCP gateway (mcp.apify.com) with your own APIFY_TOKEN; the run uses your Apify account. Read-only: it only reads public web data and changes nothing on the source site. Docs: https://apify.com/publicrecords/greenhouse-jobs-scraper",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -94,7 +94,7 @@
         ]
       },
       "annotations": {
-        "title": "Greenhouse Jobs Scraper — New Postings Since Any Date",
+        "title": "Greenhouse Jobs Scraper — New Job Postings Since Any Date",
         "readOnlyHint": true,
         "destructiveHint": false,
         "idempotentHint": false,
@@ -103,8 +103,8 @@
     },
     {
       "name": "publicrecords--lever-jobs-scraper",
-      "title": "Lever Jobs Scraper — New Postings Since Any Date",
-      "description": "Lever Jobs Scraper — New Postings Since Any Date. Scrape open jobs from any Lever job board and return only postings created since a date or window (24h, 7d, 30d). Title, location, team, workplace type, URL, description.\n\nWhen to use: Use when you need open jobs from companies that hire on Lever, optionally only those created since a date or window (24h, 7d, 30d).\n\nReturns: the run's dataset rows as structured JSON (one row per result), plus the run and dataset IDs for paging the full dataset.\n\nBehavior: starts one run of the Apify Actor \"publicrecords/lever-jobs-scraper\" through Apify's hosted MCP gateway (mcp.apify.com) with your own APIFY_TOKEN; the run uses your Apify account. Read-only: it only reads public web data and changes nothing on the source site. Docs: https://apify.com/publicrecords/lever-jobs-scraper",
+      "title": "Lever Jobs Scraper — New Job Postings Since Any Date",
+      "description": "Lever Jobs Scraper — New Job Postings Since Any Date. Scrape Lever jobs and job postings from any Lever job board, only those created since a date or window (24h, 7d, 30d). Title, location, team, workplace type, URL, description.\n\nWhen to use: Use when you need open jobs from companies that hire on Lever, optionally only those created since a date or window (24h, 7d, 30d).\n\nReturns: the run's dataset rows as structured JSON (one row per result), plus the run and dataset IDs for paging the full dataset.\n\nBehavior: starts one run of the Apify Actor \"publicrecords/lever-jobs-scraper\" through Apify's hosted MCP gateway (mcp.apify.com) with your own APIFY_TOKEN; the run uses your Apify account. Read-only: it only reads public web data and changes nothing on the source site. Docs: https://apify.com/publicrecords/lever-jobs-scraper",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -141,7 +141,7 @@
         ]
       },
       "annotations": {
-        "title": "Lever Jobs Scraper — New Postings Since Any Date",
+        "title": "Lever Jobs Scraper — New Job Postings Since Any Date",
         "readOnlyHint": true,
         "destructiveHint": false,
         "idempotentHint": false,
